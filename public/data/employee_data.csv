@@ -1,0 +1,101 @@
+EmpID,First Name,Last Name,Title,Supervisor,Department,Division,Level,Username,Password
+3427,Anthony,Absolute,CEO,N/A,N/A,N/A,1,anthonyabsolute,anthonyabsolute
+3428,Nick ,Adams,CFO,Anthony Absolute,Finance,Finance,2,nickadams,nickadams
+3429,Parson,Adams,COO,Anthony Absolute,Operations,Operations,2,parsonadams,parsonadams
+3430,Frankie,Addams,VP - Supply Chain & Manufacturing,Parson Adams,Finance,Supply Chain and Manufacturing,3,frankieaddams,frankieaddams
+3431,Anthony,Adverse,VP - Marketing,Parson Adams,Marketing,Marketing,3,anthonyadverse,anthonyadverse
+3432,Squire,Allworthy,VP - Sales,Nick Adams,Sales,Sales,3,pamelaandrews,pamelaandrews
+3433,Pamela,Andrews,VP - Operations,Parson Adams,Operations,Operations,3,pamelaandrews,pamelaandrews
+3434,Harry,Angstrom,F&A Controller,Nick Adams,Finance,Finance,3,harryangstrom,harryangstrom
+3435,Isabel,Archer,Senior Supply Chain Manager,Frankie Addams,Finance,Supply Chain and Manufacturing,4,isabelarcher,isabelarcher
+3436,Enoch,Arden,Logistics Specialist,Frankie Addams,Finance,Supply Chain and Manufacturing,4,enocharden,enocharden
+3437,Gustave,von Aschenbach,Production Manager,Frankie Addams,Finance,Supply Chain and Manufacturing,4,gustavevonaschenbach,gustavevonaschenbach
+3438,Brett,Ashley,Order Management,Isabel Archer,Finance,Supply Chain and Manufacturing,5,brettashley,brettashley
+3439,Bilbo,Baggins,Order Management,Isabel Archer,Finance,Supply Chain and Manufacturing,5,bilbobaggins,bilbobaggins
+3440,Harry,Bailly,Order Management,Isabel Archer,Finance,Supply Chain and Manufacturing,5,harrybailly,harrybailly
+3441,David,Balfour,Demand Planner,Isabel Archer,Finance,Supply Chain and Manufacturing,5,davidbalfour,davidbalfour
+3442,Jake,Barnes,Demand Planner,Isabel Archer,Finance,Supply Chain and Manufacturing,5,jakebarnes,jakebarnes
+3443,Lily,Bart,Demand Planner,Isabel Archer,Finance,Supply Chain and Manufacturing,5,lilybart,lilybart
+3444,Evgeny,Bazarov,Supply Planner,Isabel Archer,Finance,Supply Chain and Manufacturing,5,evgenybazarov,evgenybazarov
+3445,Adam,Bede,Supply Planner,Isabel Archer,Finance,Supply Chain and Manufacturing,5,adambede,adambede
+3446,Pierre,Bezukhov,Supply Planner,Isabel Archer,Finance,Supply Chain and Manufacturing,5,pierrebezukhov,pierrebezukhov
+3447,Rupert,Birkin,Production Duty Manager,Gustave von Aschenbach,Finance,Supply Chain and Manufacturing,5,rupertbirkin,rupertbirkin
+3448,Anthony,Blanche,Production Assistant,Rupert Birkin,Finance,Supply Chain and Manufacturing,6,anthonyblanche,anthonyblanche
+3449,Molly,Bloom,Production Assistant,Rupert Birkin,Finance,Supply Chain and Manufacturing,6,mollybloom,mollybloom
+3450,William,Boldwood,Production Assistant,Rupert Birkin,Finance,Supply Chain and Manufacturing,6,williamboldwood,williamboldwood
+3451,Josiah,Bounderby,Production Assistant,Rupert Birkin,Finance,Supply Chain and Manufacturing,6,josiahbounderby,josiahbounderby
+3452,Emma,Bovary,Production Assistant,Rupert Birkin,Finance,Supply Chain and Manufacturing,6,emmabovary,emmabovary
+3453,Sally,Bowles,Brand Manager,Anthony Adverse,Marketing,Branding,4,sallybowles,sallybowles
+3454,Augusta,Bracknell,Director of Product Marketing,Anthony Adverse,Marketing,Branding,4,augustabracknell,augustabracknell
+3455,Matthew,Bramble,Product Marketing Manager,Augusta Bracknell,Marketing,Branding,5,matthewbramble,matthewbramble
+3456,Dave,Brandstetter,Product Marketing Specialist,Augusta Bracknell,Marketing,Branding,5,davebrandstetter,davebrandstetter
+3457,Ursula,Brangwen,Creative Director,Anthony Adverse,Marketing,Branding,4,ursulabrangwen,ursulabrangwen
+3458,Hans,Brinker,UI/UX Designer,Ursula Brangwen,Marketing,Digital,5,hansbrinker,hansbrinker
+3459,Lily,Briscoe,UI/UX Designer,Ursula Brangwen,Marketing,Digital,5,lilybriscoe,lilybriscoe
+3460,Dorothea,Brooke,UI/UX Designer,Ursula Brangwen,Marketing,Digital,5,dorotheabrooke,dorotheabrooke
+3461,Daisy,Buchanan,UI/UX Designer,Ursula Brangwen,Marketing,Digital,5,daisybuchanan,daisybuchanan
+3462,Rhett,Butler,Graphic Designer,Ursula Brangwen,Marketing,Branding,5,rhettbutler,rhettbutler
+3463,Albert,Campion,Graphic Designer,Ursula Brangwen,Marketing,Branding,5,albertcampion,albertcampion
+3464,Philip,Carey,Copywriter,Ursula Brangwen,Marketing,Branding,5,philipcarey,philipcarey
+3465,Nick ,Carraway,Copywriter,Ursula Brangwen,Marketing,Branding,5,nickcarraway,nickcarraway
+3466,Richard,Carstone,Social Media Manager,Sally Bowles,Marketing,Digital,5,richardcarstone,richardcarstone
+3467,Sydney,Carton,Social Media Manager,Sally Bowles,Marketing,Digital,5,sydneycarton,sydneycarton
+3468,Edward,Casaubon,Category Manager,Squire Allworthy,Sales,Sales,4,edwardcasaubon,edwardcasaubon
+3469,Holden,Caulfield,Merchandiser,Squire Allworthy,Sales,Sales,4,holdencaulfield,holdencaulfield
+3470,Olive,Chancellor,DTC Sales Manager,Squire Allworthy,Sales,Sales,4,olivechancellor,olivechancellor
+3471,Roger,Chillingworth,eCommerce Sales Manager,Squire Allworthy,Sales,Sales,4,rogerchillingworth,rogerchillingworth
+3472,Anna,Christie,eCommerce Sales Manager,Squire Allworthy,Sales,Sales,4,annachristie,annachristie
+3473,John,Claggart,eCommerce Supervisor,Roger Chillingworth,Sales,Sales,5,johnclaggart,johnclaggart
+3474,Angel,Clare,Account Manager,Olive Chancellor,Sales,Sales,5,angelclare,angelclare
+3475,Arthur,Clennam,Account Manager,Olive Chancellor,Sales,Sales,5,arthurclennam,arthurclennam
+3476,David,Copperfield,Sales Coordinator,John Claggart,Sales,Sales,6,davidcopperfield,davidcopperfield
+3477,Janie,Crawford,Sales Coordinator,John Claggart,Sales,Sales,6,janiecrawford,janiecrawford
+3478,Gerald,Crich,Sales Representative,David Copperfield,Sales,Sales,7,geraldcrich,geraldcrich
+3479,Guy,Crouchback,Sales Representative,David Copperfield,Sales,Sales,7,guycrouchback,guycrouchback
+3480,Edmond,Dantes,Sales Representative,David Copperfield,Sales,Sales,7,edmonddantes,edmonddantes
+3481,Charles,Darnay,Sales Representative,David Copperfield,Sales,Sales,7,charlesdarnay,charlesdarnay
+3482,Digenis,Akritas,Sales Representative,Janie Crawford,Sales,Sales,7,digenisakritas,digenisakritas
+3483,Nicole,Diver,Sales Representative,Janie Crawford,Sales,Sales,7,nicolediver,nicolediver
+3484,Eliza,Doolittle,Sales Representative,Janie Crawford,Sales,Sales,7,elizadoolittle,elizadoolittle
+3485,Lorna,Doone,Director of People Operations,Pamela Andrews,Human Resources,Human Resources,4,lornadoone,lornadoone
+3486,Nancy,Drew,HR Manager,Lorna Doone,Human Resources,Human Resources,5,nancydrew,nancydrew
+3487,Edwin,Drood,HR Coordinator,Nancy Drew,Human Resources,Human Resources,6,edwindrood,edwindrood
+3488,Henry,Esmond,HR Coordinator,Nancy Drew,Human Resources,Human Resources,6,henryesmond,henryesmond
+3489,Bathsheba,Everdene,Administrative Assistant,Edwin Drood,Human Resources,Human Resources,7,bathshebaeverdene,bathshebaeverdene
+3490,Jude,Fawley,Administrative Assistant,Edwin Drood,Human Resources,Human Resources,7,judefawley,judefawley
+3491,Richard,Feverel,Administrative Assistant,Edwin Drood,Human Resources,Human Resources,7,richardfeverel,richardfeverel
+3492,Flora,Finching,Administrative Assistant,Henry Esmond,Human Resources,Human Resources,7,florafinching,florafinching
+3493,Jeremiah,Flintwich,Administrative Assistant,Henry Esmond,Human Resources,Human Resources,7,jeremiahflintwich,jeremiahflintwich
+3494,Phileas,Fogg,Director of Product Development,Pamela Andrews,Research and Development,Research and Development,4,phileasfogg,phileasfogg
+3495,Ethan,Frome,Product Manager,Phileas Fogg,Research and Development,Research and Development,5,ethanfrome,ethanfrome
+3496,Hedda,Gabler,Product Manager,Phileas Fogg,Research and Development,Research and Development,5,heddagabler,heddagabler
+3497,Sairey,Gamp,Product Developer,Ethan Frome,Research and Development,Research and Development,6,saireygamp,saireygamp
+3498,Eugene,Grant,Product Developer,Ethan Frome,Research and Development,Research and Development,6,eugenegrant,eugenegrant
+3499,Joe,Gargery,Product Developer,Hedda Gabler,Research and Development,Research and Development,6,joegargery,joegargery
+3500,Jay,Gatsby,Product Developer,Hedda Gabler,Research and Development,Research and Development,6,jaygatsby,jaygatsby
+3501,Eugenie,Grandet,Director of Analytics,Pamela Andrews,Operations,Analytics,4,eugeniegrandet,eugeniegrandet
+3502,Emmeline,Grangerford,Director of Customer Service,Pamela Andrews,Operations,Customer Service,4,emmelineggrangerford,emmelineggrangerford
+3503,Dorian,Gray,IT Manager,Pamela Andrews,Operations,IT,4,doriangray,doriangray
+3504,Clyde,Griffiths,Business Analytics Manager,Eugenie Grandet,Operations,Analytics,5,clydegriffiths,clydegriffiths
+3505,Martin,Guerre,Business Analyst,Clyde Griffiths,Operations,Analytics,6,martinguerre,martinguerre
+3506,Mike,Hammer,Business Analyst,Clyde Griffiths,Operations,Analytics,6,mikehammer,mikehammer
+3507,Jonathon,Harker,Business Analyst,Clyde Griffiths,Operations,Analytics,6,jonathonharker,jonathonharker
+3508,Clarissa,Harlowe,Business Analyst,Clyde Griffiths,Operations,Analytics,6,clarissaharlowe,clarissaharlowe
+3509,Jim,Hawkins,Digital Analytics Manager,Eugenie Grandet,Operations,Analytics,5,jimhawkins,jimhawkins
+3510,Lily,Hawks,Digital Strategy Analyst,Jim Hawkins,Operations,Analytics,6,lilyhawks,lilyhawks
+3511,Nora,Helmer,Digital Strategy Analyst,Jim Hawkins,Operations,Analytics,6,norahelmer,norahelmer
+3512,Michael,Henchard,Digital Strategy Analyst,Jim Hawkins,Operations,Analytics,6,michaelhenchard,michaelhenchard
+3513,Henry,Higgins,Customer Service Manager,Emmeline Grangerford,Operations,Customer Service,5,henryhiggins,henryhiggins
+3514,Fanny,Hill,Customer Service Manager,Emmeline Grangerford,Operations,Customer Service,5,fannyhill,fannyhill
+3515,Roy,Hobbs,Customer Service Representative,Henry Higgins,Operations,Customer Service,6,royhobbs,royhobbs
+3516,Sherlock,Holmes,Customer Service Representative,Henry Higgins,Operations,Customer Service,6,sherlockholmes,sherlockholmes
+3517,Roderick,Hudson,Customer Service Representative,Henry Higgins,Operations,Customer Service,6,roderickhudson,roderickhudson
+3518,Anna,Karenina,Customer Service Representative,Fanny Hill,Operations,Customer Service,6,annakarenina,annakarenina
+3519,Carol,Kennicott,Customer Service Representative,Fanny Hill,Operations,Customer Service,6,carolkennicott,carolkennicott
+3520,Lydia,Languish,Customer Service Representative,Fanny Hill,Operations,Customer Service,6,lydialanguish,lydialanguish
+3521,Silas,Lapham,IT Developer,Dorian Gray,Operations,IT,5,silaslapham,silaslapham
+3522,Simon,Legree,IT Developer,Dorian Gray,Operations,IT,5,simonlegree,simonlegree
+3523,Jules,Maigret,IT Security and Support,Dorian Gray,Operations,IT,5,julesmaigret,julesmaigret
+3524,Bertha,Mason,IT Security and Support,Dorian Gray,Operations,IT,5,berthamason,berthamason
+3525,Daisy,Miller,IT Security and Support,Dorian Gray,Operations,IT,5,daisymiller,daisymiller
+3526,Walter,Mitty,IT Security and Support,Dorian Gray,Operations,IT,5,waltermitty,waltermitty

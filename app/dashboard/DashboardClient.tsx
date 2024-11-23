@@ -1,12 +1,13 @@
 'use client';
 
 import { inter_bold, inter_med } from "../fonts";
-import { IoMdPerson } from "react-icons/io";
+import { IoMdPerson, IoMdPrint } from "react-icons/io";
 import { HiOutlineCircleStack } from "react-icons/hi2";
 
 import HorBarChart from "../components/vis/HorBarChart";
 import Donut from "../components/vis/Donut";
 import DonutRatio from "../components/vis/DonutRatio";
+import ButtonSm from "../components/ButtonSm";
 
 const DashboardClient = () => {
 
@@ -28,9 +29,16 @@ const DashboardClient = () => {
     ]
 
     return (
-        <div className="flex flex-col pl-4 text-neutral-900">
-            <div className={`text-4xl ${inter_med.className}`}>
-                Sales KPI Dashboard
+        <div className="flex flex-col px-4 text-neutral-900">
+            <div className="flex flex-row justify-between">
+                <div className={`text-4xl ${inter_med.className}`}>
+                    Sales KPI Dashboard
+                </div>
+                <ButtonSm 
+                    label="Print this page"
+                    onClick={() => {}} // void; unnecessary functionality for scope
+                    icon={IoMdPrint}
+                />
             </div>
             <div className="mt-10 mb-10 grid grid-cols-4 gap-4 grid-rows-3">
                 <div className="bg-gray-100 col-span-2 p-20 flex flex-col justify-center items-center rounded-md">

@@ -1,6 +1,7 @@
 'use client';
 
 import { useRouter } from "next/navigation";
+import Avatar from "../Avatar";
 
 const Header = () => {
     const router = useRouter()
@@ -16,8 +17,8 @@ const Header = () => {
                         Title
                     </div>
                 </div>
-                <div className="text-neutral-900">
-                    Insert icon here
+                <div className="cursor-pointer">
+                    <Avatar />
                 </div>
             </div>
         </div>

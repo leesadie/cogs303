@@ -103,7 +103,7 @@ const ReportClient: React.FC<ReportProps> = ({
                     )}
 
                     {/* Marketing view */}
-                    {currentUser && (currentUser.division === 'Marketing' || currentUser.division === 'Sales') && (
+                    {currentUser && currentUser.division === 'Marketing' && (
                         <div className="flex flex-col">
                             <div className={`mt-5 text-xl ${inter_med.className}`}>
                                 Next Steps
@@ -115,7 +115,27 @@ const ReportClient: React.FC<ReportProps> = ({
                                         <span className="bg-yellow-100 px-1 rounded">
                                             Australia and the Netherlands
                                         </span>{" "}
-                                        to increase growth.
+                                        to increase growth by tailoring content for these countries.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    )}
+
+                    {/* Finance view */}
+                    {currentUser && currentUser.division === 'Finance' && (
+                        <div className="flex flex-col">
+                            <div className={`mt-5 text-xl ${inter_med.className}`}>
+                                Finance - Next Steps
+                            </div>
+                            <ul className="list-decimal pl-4 text-lg mt-2">
+                                <li>
+                                    <p>
+                                        More resources should be allocated to 
+                                        <span className="bg-yellow-100 px-1 rounded">
+                                            Australia and the Netherlands
+                                        </span>{" "}
+                                        to increase growth in these countries via marketing.
                                     </p>
                                 </li>
                             </ul>

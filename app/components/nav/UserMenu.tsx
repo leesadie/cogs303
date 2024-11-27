@@ -79,6 +79,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                         top-12
                         text-sm
                         text-neutral-900
+                        z-10
                     "
                 >
                     <div className="flex flex-col cursor-pointer">

@@ -26,7 +26,7 @@ const CLayout = () => {
     ]
 
     return (
-        <div className="mt-10 mb-10 grid grid-cols-4 gap-4 grid-rows-3">
+        <div className="">
                 <div className="bg-gray-100 col-span-2 p-20 flex flex-col justify-center items-center rounded-md">
                     <div className={`text-5xl ${inter_med.className}`}>
                         $498,567 CAD

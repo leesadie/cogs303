@@ -1,12 +1,15 @@
+import getCurrentUser from "../actions/getCurrentUser";
 import ClientOnly from "../components/ClientOnly";
 import ReportClient from "./ReportClient";
+import { GetServerSideProps } from "next";
 
-const ReportPage = () => {
+
+export default async function ReportPage () {
+    const currentUser = await getCurrentUser();
+    
     return (
         <ClientOnly>
-            <ReportClient />
+            <ReportClient currentUser={currentUser}/>
         </ClientOnly>
     );
 }
-
-export default ReportPage;

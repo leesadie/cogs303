@@ -5,7 +5,18 @@ import BarChart from "../components/vis/BarChart";
 import ButtonSm from "../components/ButtonSm";
 import { IoMdPrint } from "react-icons/io";
 
-const ReportClient = () => {
+import getCurrentUser from "../actions/getCurrentUser";
+
+interface ReportProps {
+    currentUser: {
+        level: string;
+        division: string;
+    }
+}
+
+const ReportClient: React.FC<ReportProps> = ({
+    currentUser
+}) => {
     const sampleData = [
         { label: "UK", value: 30 },
         { label: "France", value: 80 },
@@ -16,7 +27,7 @@ const ReportClient = () => {
     ];
 
     return (
-        <div className="flex flex-row pl-4 text-neutral-900">
+        <div className="flex flex-row pl-4 mt-4 text-neutral-900">
             {/* Main Content */}
             <div className="flex-grow">
                 <div className={`text-4xl ${inter_med.className}`} id="report-title">
@@ -63,15 +74,59 @@ const ReportClient = () => {
                             </p>
                         </li>
                     </ul>
-                </div>
-                <div className="text-2xl pt-5" id="sales-distribution">
-                    Sales Distribution
+
+                    {/* C-suite view */}
+                    {currentUser && (currentUser.level === '1' || currentUser.level === '2') && (
+                        <div className="flex flex-col">
+                            <div className={`mt-5 text-xl ${inter_med.className}`}>
+                                Growth Overview
+                            </div>
+                            <div className="mt-2 text-lg">
+                                France has shown the greatest growth this quarter, with sales up by 60%, while
+                                growth in Australia and the Netherlands has started to plateau. Both marketing
+                                and prospecting efforts should increase focus in these countries.
+                            </div>
+                            <div className={`mt-5 text-xl ${inter_med.className}`}>
+                                Beyond Q2
+                            </div>
+                            <ul className="list-decimal pl-4 text-lg mt-2">
+                                <li>
+                                    <p>
+                                        Expansion into the East Asia market by the end of the fiscal year is expected to 
+                                        <span className="bg-yellow-100 px-1 rounded">
+                                            increase revenue by 40%.
+                                        </span>{" "}
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    )}
+
+                    {/* Marketing view */}
+                    {currentUser && (currentUser.division === 'Marketing' || currentUser.division === 'Sales') && (
+                        <div className="flex flex-col">
+                            <div className={`mt-5 text-xl ${inter_med.className}`}>
+                                Next Steps
+                            </div>
+                            <ul className="list-decimal pl-4 text-lg mt-2">
+                                <li>
+                                    <p>
+                                        Heighten focus in
+                                        <span className="bg-yellow-100 px-1 rounded">
+                                            Australia and the Netherlands
+                                        </span>{" "}
+                                        to increase growth.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    )}
                 </div>
             </div>
 
             {/* Table of Contents */}
             <div className="flex flex-row ml-8 mr-4">
-                <div className="border-l border-gray-300 h-[100px]"></div>
+                <div className="border-l border-gray-300 h-[120px]"></div>
                 <div className="pl-4">
                     <div className={`text-lg font-bold ${inter_bold.className}`}>
                         Contents
@@ -80,11 +135,6 @@ const ReportClient = () => {
                         <li>
                             <a href="#sales-by-country" className="hover:underline">
                                 Sales by Country
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#sales-distribution" className="hover:underline">
-                                Sales Distribution
                             </a>
                         </li>
                     </ul>

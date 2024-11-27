@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Hero from "./components/Hero";
+import getCurrentUser from "./actions/getCurrentUser";
 
-export default function Home() {
+export default async function Home() {
+  const currentUser = await getCurrentUser();
+
   return (
-    <div className="">
-      <Hero />
-    </div>
+    <Hero currentUser={currentUser}/>
   );
 }

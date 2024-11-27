@@ -2,23 +2,35 @@
 
 import { useRouter } from "next/navigation";
 import Avatar from "../Avatar";
+import { SafeUser } from "@/app/types";
+import UserMenu from "./UserMenu";
 
-const Header = () => {
+interface HeaderProps {
+    currentUser?: SafeUser | null
+    data?: SafeUser
+    onAction?: (id: string) => void;
+  }
+
+const Header: React.FC<HeaderProps> = ({
+    currentUser,
+    data,
+    onAction
+}) => {
     const router = useRouter()
 
     return (
-        <div className="w-full z-10">
-            <div className="flex flex-row justify-between p-4 text-white">
+        <div className="w-full z-10 bg-white">
+            <div className="flex flex-row items-center justify-between p-4 text-white">
                 <div className="flex flex-col">
                     <div className="text-neutral-900 text-lg">
-                        Hello, user
+                        Hello, {currentUser?.name || ''}
                     </div>
                     <div className="text-neutral-900 opacity-75">
-                        Title
+                        {currentUser?.title || ''}
                     </div>
                 </div>
                 <div className="cursor-pointer">
-                    <Avatar />
+                    <UserMenu currentUser={currentUser}/>
                 </div>
             </div>
         </div>

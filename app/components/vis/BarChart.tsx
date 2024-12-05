@@ -9,6 +9,8 @@ interface BarChartProps {
     height: number;
     xAxisLabel?: string;
     yAxisLabel?: string;
+    highlightedMax?: string | null;
+    highlightedMin?: string | null;
 }
 
 const BarChart: React.FC<BarChartProps> = ({
@@ -16,7 +18,9 @@ const BarChart: React.FC<BarChartProps> = ({
     width,
     height,
     xAxisLabel,
-    yAxisLabel
+    yAxisLabel,
+    highlightedMax,
+    highlightedMin
 }) => {
     const svgRef = useRef<SVGSVGElement | null>(null);
 
@@ -92,6 +96,8 @@ const BarChart: React.FC<BarChartProps> = ({
         .attr("width", xScale.bandwidth())
         .attr("height", (d) => height - margin.bottom - yScale(d.value))
         .attr("fill", "#4338ca")
+        .attr("stroke", (d) => ((highlightedMax === d.label || highlightedMin === d.label) ? "#f59e0b" : "none"))
+        .attr("stroke-width", (d) => ((highlightedMax === d.label || highlightedMin === d.label) ? 4 : 0))
         .on("mouseover", (event, d) => {
             d3.select(event.currentTarget).attr("opacity", 0.8); // Highlight
             })

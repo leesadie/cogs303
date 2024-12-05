@@ -26,6 +26,20 @@ const ReportClient: React.FC<ReportProps> = ({
         { label: "Norway", value: 90 },
     ];
 
+    const isCLevel = currentUser && (currentUser.level === "1" || currentUser.level === "2");
+    const highlightedBarC = isCLevel
+    ? sampleData.reduce((max, bar) =>
+        bar.value > max.value ? bar : max
+      ).label
+    : null;
+
+    const isMarketing = currentUser && currentUser.division === "Marketing";
+    const highlightedBarM = isMarketing
+    ? sampleData.reduce((min, bar) => 
+        bar.value < min.value ? bar : min
+        ).label
+    : null;
+
     return (
         <div className="flex flex-row pl-4 mt-4 text-neutral-900">
             {/* Main Content */}
@@ -43,11 +57,18 @@ const ReportClient: React.FC<ReportProps> = ({
                         height={600}
                         xAxisLabel="Country"
                         yAxisLabel="Number of Sales"
+                        highlightedMax={highlightedBarC}
+                        highlightedMin={highlightedBarM}
                     />
                 </div>
                 <div className="w-[650px]">
                     <div className="mt-5 text-lg">
-                        Q1 showed the greatest amount of sales from Norway, which is expected given our target market.
+                    Q1 showed the greatest amount of sales from{" "}
+                        {currentUser && (currentUser.level === '1' || currentUser.level === '2') ? (
+                            <span className="bg-yellow-100 px-1 rounded">Norway</span>
+                        ) : (
+                            "Norway"
+                        )}, which is expected given our target market.
                     </div>
                     <div className={`mt-5 text-xl ${inter_med.className}`}>
                         Moving into Q2
@@ -58,19 +79,41 @@ const ReportClient: React.FC<ReportProps> = ({
                     <ul className="list-decimal pl-4 text-lg mt-2">
                         <li>
                             <p>
-                                <span className="bg-yellow-100 px-1 rounded">
-                                    4 retailers in Canada
-                                </span>{" "}
-                                have moved forward in the contracting process and should be finalized by the end of Q2.
+                                {currentUser && (currentUser.level === '1' || currentUser.level === '2') ? (
+                                    <>
+                                        4 retailers in Canada have moved forward in the contracting process and should be{" "}
+                                        <span className="bg-yellow-100 px-1 rounded">
+                                            finalized by the end of Q2
+                                        </span>.
+                                    </>
+                                ) : (
+                                    <>
+                                        <span className="bg-yellow-100 px-1 rounded">
+                                            4 retailers in Canada
+                                        </span>{" "}
+                                        have moved forward in the contracting process and should be finalized by the end of Q2.
+                                    </>
+                                )}
                             </p>
                         </li>
                         <li>
                             <p>
-                                Market forecasts show opportunities for{" "}
-                                <span className="bg-yellow-100 px-1 rounded">
-                                    growth in Germany
-                                </span>
-                                . Focus on prospecting here should be increased.
+                                {currentUser && currentUser.division === 'Marketing' ? (
+                                    <>
+                                        Market forecasts show opportunities for growth in{" "}
+                                        <span className="bg-yellow-100 px-1 rounded">
+                                           Germany. Focus on prospecting here should be increased.
+                                        </span>
+                                    </>
+                                ) : (
+                                    <>
+                                        Market forecasts show opportunities for{" "}
+                                        <span className="bg-yellow-100 px-1 rounded">
+                                            growth in Germany
+                                        </span>
+                                        . Focus on prospecting here should be increased.
+                                    </>
+                                )}
                             </p>
                         </li>
                     </ul>
@@ -84,7 +127,7 @@ const ReportClient: React.FC<ReportProps> = ({
                             <div className="mt-2 text-lg">
                                 France has shown the greatest growth this quarter, with sales up by 60%, while
                                 growth in Australia and the Netherlands has started to plateau. Both marketing
-                                and prospecting efforts should increase focus in these countries.
+                                and prospecting efforts should increase in these countries.
                             </div>
                             <div className={`mt-5 text-xl ${inter_med.className}`}>
                                 Beyond Q2
@@ -103,7 +146,7 @@ const ReportClient: React.FC<ReportProps> = ({
                     )}
 
                     {/* Marketing view */}
-                    {currentUser && currentUser.division === 'Marketing' && (
+                    {currentUser && (currentUser.division === 'Marketing' || currentUser.division === 'Sales') && (
                         <div className="flex flex-col">
                             <div className={`mt-5 text-xl ${inter_med.className}`}>
                                 Next Steps
@@ -113,7 +156,7 @@ const ReportClient: React.FC<ReportProps> = ({
                                     <p>
                                         Heighten focus in
                                         <span className="bg-yellow-100 px-1 rounded">
-                                            Australia and the Netherlands
+                                            Germany
                                         </span>{" "}
                                         to increase growth by tailoring content for these countries.
                                     </p>
@@ -133,9 +176,9 @@ const ReportClient: React.FC<ReportProps> = ({
                                     <p>
                                         More resources should be allocated to 
                                         <span className="bg-yellow-100 px-1 rounded">
-                                            Australia and the Netherlands
+                                            Germany
                                         </span>{" "}
-                                        to increase growth in these countries via marketing.
+                                        to increase growth in the country via marketing.
                                     </p>
                                 </li>
                             </ul>
